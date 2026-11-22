@@ -1,0 +1,71 @@
+{
+  "uav": {
+    "power_watts": 63.0,
+    "data_rate_bps": 100000.0,
+    "processing_mips": 800.0,
+    "gateway_power_watts": 30.0,
+    "gateway_uav_capacity": 3,
+    "wireless_bandwidth_bps": 54000000.0
+  },
+  "access_net": {
+    "onu_power_watts": 5.0,
+    "onu_bitrate_bps": 2400000000.0,
+    "olt_power_watts": 1842.0,
+    "olt_bitrate_bps": 1280000000000.0,
+    "pue_network": 1.5
+  },
+  "metro_net": {
+    "router_power_watts": 30.0,
+    "router_bitrate_bps": 40000000000.0,
+    "switch_power_watts": 470.0,
+    "switch_bitrate_bps": 500000000000.0,
+    "np_fog_watts_per_gbps": 2.57
+  },
+  "core_net": {
+    "router_port_power_watts": 37.1,
+    "router_port_bandwidth_bps": 40000000000.0,
+    "transponder_power_watts": 129.0,
+    "amplifier_power_watts": 11.0,
+    "optical_switch_power_watts": 85.0,
+    "amplifier_max_span_km": 80.0,
+    "default_link_distance_km": 600.0,
+    "fibers_per_link": 2,
+    "speed_of_light_fiber_km_s": 200000.0
+  },
+  "fog": {
+    "power_watts": 126.0,
+    "capacity_mips": 3600.0,
+    "pue_fog": 1.9,
+    "pcmips_watts_per_mips": 0.035
+  },
+  "cloud": {
+    "power_watts": 630.0,
+    "capacity_mips": 18000.0,
+    "pue_cloud": 1.1,
+    "pcmips_watts_per_mips": 0.035,
+    "np_cloud_watts_per_gbps": 2.48
+  },
+  "task_classes": {
+    "A": {
+      "name": "Number Plate / Health / Sustainable Agriculture",
+      "class_type": "A",
+      "mips_required": 500.0,
+      "frequency_ratio": 0.6,
+      "typical_data_size_mb": 10.0
+    },
+    "B": {
+      "name": "Fire Detection / Video Surveillance",
+      "class_type": "B",
+      "mips_required": 2000.0,
+      "frequency_ratio": 0.3,
+      "typical_data_size_mb": 15.0
+    },
+    "C": {
+      "name": "Augmented Reality / Virtual Reality",
+      "class_type": "C",
+      "mips_required": 6000.0,
+      "frequency_ratio": 0.1,
+      "typical_data_size_mb": 25.0
+    }
+  }
+}
